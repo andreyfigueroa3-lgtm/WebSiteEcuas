@@ -5,7 +5,7 @@ import ExamPractice from './pages/ExamPractice';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/exams" element={<BrowseExams />} />
