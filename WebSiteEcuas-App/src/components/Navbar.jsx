@@ -11,7 +11,6 @@ export default function Navbar() {
   const navItems = [
     { path: '/', label: 'Inicio' },
     { path: '/exams', label: 'Exámenes' },
-    { path: '/about', label: 'Acerca de' },
   ];
 
   return (
@@ -61,7 +60,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-white border-opacity-20">
+          <div className="md:hidden mt-4 pb-4 border-t border-white/20">
             {navItems.map(item => (
               <button
                 key={item.path}
